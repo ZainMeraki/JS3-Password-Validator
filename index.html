@@ -12,12 +12,26 @@
 
 <body>
     
+    <div class="container">
+        <h2>Password Validation Check</h2>
+        
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
 
+        <div>
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Min. 8 chars, no spaces, no username">
+                <button type="button" id="togglePassword" class="toggle-password">SHOW</button>
+            </div>
+        </div>
+        
+        <button id="checkButton">Check Password</button>
 
-
-
-
-
+        <div id="result"></div>
+    </div>
 
     <!-- JS Script Links -->
     <script src="/Scripts/index.js"></script>
